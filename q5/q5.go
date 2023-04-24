@@ -13,8 +13,19 @@ package q5
 //programa na sequência de caracteres inicial.
 //
 //Ajude Pedro a lidar com esta tarefa fácil.
-
 func ProcessString(s string) string {
 	// Seu código aqui
-	return ""
+	//Deletar todas as vogais da sring vowels:="AEIOUaeiou"
+	vowels:="AEIOUaeiou"
+	for _,v:=range vowels{
+		s=string.ReplaceAll(s,string(v),"")
+	}
+	consonants :="BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz"
+	for _,c:=range consonants{s=string.Replaceall(s,string(c),"."+string(c),"."+string(c)){
+			for i:=0;i<len(s);i++{
+				if 'A'<=s[i] && s[i]<='Z'{s=s[:i]+string (s[i]+32)+s[i+1:]}
+	}
+	}
+	}
+	return s
 }
